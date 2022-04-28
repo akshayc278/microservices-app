@@ -29,7 +29,7 @@ public class MovieCatalogController {
 	@RequestMapping("/{userId}")
 	public ListOfMovieCatalog getCatalog(@PathVariable int userId) {
 		// get all movie rating
-		ListOfRatings ratings = restTemplate.getForObject("http://localhost:8082/data/user/" + userId,
+		ListOfRatings ratings = restTemplate.getForObject("http://movie-data-service/data/user/" + userId,
 				ListOfRatings.class);
 
 		// get movie info for movie id
@@ -37,7 +37,7 @@ public class MovieCatalogController {
 
 		ListOfMovieCatalog listOfMovieCatalog = new ListOfMovieCatalog();
 		listOfMovieCatalog.setListOfMovieCatalog(listRating.stream().map(r -> {
-			Movie movie = restTemplate.getForObject("http://localhost:8081/info/" + r.getRatings(), Movie.class);
+			Movie movie = restTemplate.getForObject("http://movie-info-service/info/" + r.getRatings(), Movie.class);
 			return new MovieCatalog(movie.getName(), "sci fi movie", r.getRatings());
 
 		}).collect(Collectors.toList()));

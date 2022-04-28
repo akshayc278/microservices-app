@@ -6,4 +6,8 @@
     <fullyQualifiedTypeName name="com.moviecatalog.base.bean.Movie"/>
     <fullyQualifiedTypeName name="org.springframework.web.reactive.function.client.WebClient"/>
     <fullyQualifiedTypeName name="org.springframework.web.reactive.function.client.WebClient.Builder"/>
+    <fullyQualifiedTypeName name="com.moviedata.base.bean.ListOfRatings"/>
+    <fullyQualifiedTypeName name="com.moviecatalog.base.bean.ListOfMovieCatalog"/>
+    <fullyQualifiedTypeName name="org.springframework.cloud.client.loadbalancer.LoadBalanced"/>
+    <fullyQualifiedTypeName name="org.springframework.cloud.netflix.eureka.EnableEurekaClient"/>
 </qualifiedTypeNameHistroy>

@@ -11,3 +11,7 @@ w
 Gsrc/main/java/com/moviecatalog/base/MovieCatalogServiceApplication.java,c/0/c0fd5f47a2e0582a0abba9b7ceb9826ade896333
 z
 Jsrc/main/java/com/moviecatalog/base/controller/MovieCatalogController.java,7/d/7d35804add6bc728c21ba5e723117053162f930b
+p
+@src/main/java/com/moviecatalog/base/bean/ListOfMovieCatalog.java,9/e/9e27787ea536f8b5ac77b3ea06bd41d81f4ef41f
+Y
+)src/main/resources/application.properties,0/6/06f65155ec73600b9fc5c4dc2883d4bb84d8e284
