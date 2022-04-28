@@ -1,0 +1,6 @@
+package com.movieinfo.base.bean;
+
+public class Movie {
+	private String movieId;
+	private String name;
+}

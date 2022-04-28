@@ -1,0 +1,21 @@
+package com.moviecatalog.base.controller;
+
+import java.util.Collections;
+import java.util.List;
+
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.moviecatalog.base.bean.MovieCatalog;
+
+@RestController
+@RequestMapping("/catalog")
+public class MovieCatalogController {
+	
+	@RequestMapping("/{userId}")
+	public List<MovieCatalog> getCatalog(@PathVariable int userId){
+		return Collections.singletonList(
+				new MovieCatalog("Transformer","Sci robot movie",userId));				
+	}
+}

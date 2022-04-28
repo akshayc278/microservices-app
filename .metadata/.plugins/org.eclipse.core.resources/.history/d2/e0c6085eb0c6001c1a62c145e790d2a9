@@ -1,0 +1,5 @@
+package com.moviedata.base.controller;
+
+public class MovieDataController {
+
+}

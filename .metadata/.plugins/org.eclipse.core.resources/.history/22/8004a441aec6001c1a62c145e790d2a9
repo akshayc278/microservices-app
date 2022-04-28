@@ -1,0 +1,21 @@
+package com.moviecatalog.base.controller;
+
+import java.util.Collections;
+import java.util.LinkedList;
+import java.util.List;
+
+import org.springframework.web.bind.annotation.RestController;
+
+import com.moviecatalog.base.bean.MovieCatalog;
+
+@RestController
+@RequestMapping("/catalog")
+public class MovieCatalogController {
+	
+	public List<MovieCatalog> getCatalog(String userId){
+		return Collections.singletonList(
+				new MovieCatalog("Transformer","Sci robot movie",4));
+		
+				
+	}
+}

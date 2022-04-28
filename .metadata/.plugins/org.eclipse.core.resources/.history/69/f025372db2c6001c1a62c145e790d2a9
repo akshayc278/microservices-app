@@ -1,0 +1,37 @@
+package com.moviecatalog.base.controller;
+
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.List;
+import java.util.stream.Collectors;
+
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.moviecatalog.base.bean.MovieCatalog;
+import com.moviecatalog.base.bean.Rating;
+
+@RestController
+@RequestMapping("/catalog")
+public class MovieCatalogController {
+	@RequestMapping("/{userId}")
+	public List<MovieCatalog> getCatalog(@PathVariable int userId){
+		
+		//get all movie rating 
+		List<Rating> ratings=Arrays.asList(
+				new Rating("m1",4),
+				new Rating("m2",5));
+		
+		//get movie info for movie id 
+		
+		return ratings.stream().map( r -> 
+		{
+		 	new MovieCatalog("Transformer","sci fi movie",r.getRatings()))
+				
+		}
+				
+				.collect(Collectors.toList());
+		
+	}
+}

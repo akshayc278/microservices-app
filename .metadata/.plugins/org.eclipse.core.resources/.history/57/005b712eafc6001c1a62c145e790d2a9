@@ -1,0 +1,5 @@
+package com.movieinfo.base.bean;
+
+public class Movie {
+
+}

@@ -1,0 +1,6 @@
+package com.moviecatalog.base.controller;
+
+@RestController
+public class MovieCatalogController {
+
+}
