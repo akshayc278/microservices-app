@@ -1,0 +1,12 @@
+package com.moviedata.base.bean;
+
+import java.util.List;
+
+public class ListOfRatings {
+	private List<Rating> listOfRating;
+	
+	public ListOfRatings() {
+		
+	}
+	
+}

@@ -1,0 +1,5 @@
+package com.moviedata.base.bean;
+
+public class ListOfRatings {
+	private List<Rating> listOfRating;
+}

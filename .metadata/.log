@@ -2310,3 +2310,525 @@ Contains: Missing io.netty:netty-resolver-dns-native-macos:jar:javadoc:4.1.76.Fi
 !MESSAGE Could not resolve artifact io.netty:netty-resolver-dns-native-macos:jar:javadoc:4.1.76.Final
 !SUBENTRY 2 org.eclipse.m2e.core 4 -1 2022-04-28 11:27:56.473
 !MESSAGE Missing io.netty:netty-resolver-dns-native-macos:jar:javadoc:4.1.76.Final
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-04-28 11:42:15.830
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.hrxZbFvZ
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-04-28 11:42:15.883
+!MESSAGE unsubscribing from classpath changes: sts4.classpath.hrxZbFvZ
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-04-28 11:42:15.883
+!MESSAGE subsribers = {}
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-04-28 11:42:15.884
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.hrxZbFvZ => OK
+
+!ENTRY org.eclipse.ui.ide 4 4 2022-04-28 11:42:42.456
+!MESSAGE Not properly disposed SWT resource
+!STACK 0
+java.lang.Error: SWT Resource was not properly disposed
+	at org.eclipse.swt.graphics.Resource.initNonDisposeTracking(Resource.java:172)
+	at org.eclipse.swt.graphics.Resource.<init>(Resource.java:120)
+	at org.eclipse.swt.graphics.Image.<init>(Image.java:605)
+	at org.eclipse.jface.resource.URLImageDescriptor.createImage(URLImageDescriptor.java:275)
+	at org.eclipse.jface.resource.ImageDescriptor.createResource(ImageDescriptor.java:230)
+	at org.eclipse.jface.resource.DeviceResourceManager.allocate(DeviceResourceManager.java:55)
+	at org.eclipse.jface.resource.AbstractResourceManager.create(AbstractResourceManager.java:88)
+	at org.eclipse.jface.resource.LazyResourceManager.create(LazyResourceManager.java:103)
+	at org.eclipse.jface.resource.LocalResourceManager.allocate(LocalResourceManager.java:72)
+	at org.eclipse.jface.resource.AbstractResourceManager.create(AbstractResourceManager.java:88)
+	at org.eclipse.jface.resource.ResourceManager.createImageWithDefault(ResourceManager.java:195)
+	at org.eclipse.jface.action.ActionContributionItem.updateImages(ActionContributionItem.java:1019)
+	at org.eclipse.jface.action.ActionContributionItem.updateToolItem(ActionContributionItem.java:776)
+	at org.eclipse.jface.action.ActionContributionItem.update(ActionContributionItem.java:739)
+	at org.eclipse.jface.action.ActionContributionItem.fill(ActionContributionItem.java:350)
+	at org.eclipse.jface.action.ToolBarManager.update(ToolBarManager.java:358)
+	at org.eclipse.compare.contentmergeviewer.ContentMergeViewer.initializeToolbars(ContentMergeViewer.java:953)
+	at org.eclipse.compare.contentmergeviewer.ContentMergeViewer.buildControl(ContentMergeViewer.java:873)
+	at org.eclipse.compare.contentmergeviewer.TextMergeViewer.<init>(TextMergeViewer.java:1626)
+	at org.springframework.ide.eclipse.maven.pom.PomMergeViewer.<init>(PomMergeViewer.java:41)
+	at org.springframework.ide.eclipse.maven.pom.PomMergeViewerCreator.createViewer(PomMergeViewerCreator.java:25)
+	at org.eclipse.compare.internal.ViewerDescriptor.createViewer(ViewerDescriptor.java:66)
+	at org.eclipse.compare.internal.CompareUIPlugin.getViewer(CompareUIPlugin.java:1107)
+	at org.eclipse.compare.internal.CompareUIPlugin.findContentViewer(CompareUIPlugin.java:1102)
+	at org.eclipse.compare.CompareUI.findContentViewer(CompareUI.java:338)
+	at org.eclipse.compare.CompareEditorInput.findContentViewer(CompareEditorInput.java:916)
+	at org.eclipse.compare.internal.CompareContentViewerSwitchingPane.getViewer(CompareContentViewerSwitchingPane.java:99)
+	at org.eclipse.compare.CompareViewerSwitchingPane.setInput(CompareViewerSwitchingPane.java:257)
+	at org.eclipse.compare.internal.CompareContentViewerSwitchingPane.setInput(CompareContentViewerSwitchingPane.java:202)
+	at org.eclipse.compare.CompareEditorInput.internalSetContentPaneInput(CompareEditorInput.java:806)
+	at org.eclipse.compare.CompareEditorInput.lambda$8(CompareEditorInput.java:754)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:74)
+	at org.eclipse.compare.CompareEditorInput.feed1(CompareEditorInput.java:742)
+	at org.eclipse.compare.CompareEditorInput.lambda$4(CompareEditorInput.java:640)
+	at org.eclipse.compare.CompareViewerPane.open(CompareViewerPane.java:312)
+	at org.eclipse.jface.viewers.StructuredViewer$2.run(StructuredViewer.java:800)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.jface.util.SafeRunnable.run(SafeRunnable.java:174)
+	at org.eclipse.jface.viewers.StructuredViewer.fireOpen(StructuredViewer.java:797)
+	at org.eclipse.jface.viewers.StructuredViewer.handleOpen(StructuredViewer.java:1116)
+	at org.springframework.ide.eclipse.boot.wizard.starters.eclipse.ResourceCompareInput$CustomDiffTreeViewer.lambda$0(ResourceCompareInput.java:630)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:185)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:5101)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:4584)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.block(ModalContext.java:166)
+	at org.eclipse.jface.operation.ModalContext.run(ModalContext.java:368)
+	at org.eclipse.jface.wizard.WizardDialog.run(WizardDialog.java:1033)
+	at org.springframework.ide.eclipse.boot.wizard.starters.AddStartersWizard$1.run(AddStartersWizard.java:105)
+	at org.springframework.ide.eclipse.boot.wizard.starters.CompareGeneratedAndCurrentPage.runInWizardContainer(CompareGeneratedAndCurrentPage.java:155)
+	at org.springframework.ide.eclipse.boot.wizard.starters.CompareGeneratedAndCurrentPage.generateComparison(CompareGeneratedAndCurrentPage.java:80)
+	at org.springframework.ide.eclipse.boot.wizard.starters.CompareGeneratedAndCurrentPage.connectToCompareModel(CompareGeneratedAndCurrentPage.java:150)
+	at org.springframework.ide.eclipse.boot.wizard.starters.CompareGeneratedAndCurrentPage.setVisible(CompareGeneratedAndCurrentPage.java:70)
+	at org.eclipse.jface.wizard.WizardDialog.updateForPage(WizardDialog.java:1252)
+	at org.eclipse.jface.wizard.WizardDialog.lambda$3(WizardDialog.java:1222)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:74)
+	at org.eclipse.jface.wizard.WizardDialog.showPage(WizardDialog.java:1222)
+	at org.eclipse.jface.wizard.WizardDialog.nextPressed(WizardDialog.java:917)
+	at org.eclipse.jface.wizard.WizardDialog.buttonPressed(WizardDialog.java:468)
+	at org.eclipse.jface.dialogs.Dialog.lambda$0(Dialog.java:619)
+	at org.eclipse.swt.events.SelectionListener$1.widgetSelected(SelectionListener.java:84)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:252)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:5895)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1520)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:5126)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:4581)
+	at org.eclipse.jface.window.Window.runEventLoop(Window.java:823)
+	at org.eclipse.jface.window.Window.open(Window.java:799)
+	at org.springframework.ide.eclipse.boot.wizard.starters.AddStartersWizard.openFor(AddStartersWizard.java:114)
+	at org.springframework.ide.eclipse.boot.wizard.starters.AddStartersWizard.openFor(AddStartersWizard.java:91)
+	at org.springframework.ide.eclipse.boot.wizard.AddBootStartersHandler.execute(AddBootStartersHandler.java:36)
+	at org.eclipse.ui.internal.handlers.HandlerProxy.execute(HandlerProxy.java:283)
+	at org.eclipse.ui.internal.handlers.E4HandlerProxy.execute(E4HandlerProxy.java:97)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invokeUsingClass(InjectorImpl.java:317)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invoke(InjectorImpl.java:251)
+	at org.eclipse.e4.core.contexts.ContextInjectionFactory.invoke(ContextInjectionFactory.java:173)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceHandler.execute(HandlerServiceHandler.java:156)
+	at org.eclipse.core.commands.Command.executeWithChecks(Command.java:488)
+	at org.eclipse.core.commands.ParameterizedCommand.executeWithChecks(ParameterizedCommand.java:487)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceImpl.executeHandler(HandlerServiceImpl.java:213)
+	at org.eclipse.e4.ui.workbench.renderers.swt.HandledContributionItem.executeItem(HandledContributionItem.java:438)
+	at org.eclipse.e4.ui.workbench.renderers.swt.AbstractContributionItem.handleWidgetSelection(AbstractContributionItem.java:449)
+	at org.eclipse.e4.ui.workbench.renderers.swt.AbstractContributionItem.lambda$2(AbstractContributionItem.java:475)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:5895)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1520)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:5126)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:4581)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1155)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:644)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:551)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:156)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1440)
+
+!ENTRY org.eclipse.ui.ide 4 4 2022-04-28 11:42:42.548
+!MESSAGE Not properly disposed SWT resource
+!STACK 0
+java.lang.Error: SWT Resource was not properly disposed
+	at org.eclipse.swt.graphics.Resource.initNonDisposeTracking(Resource.java:172)
+	at org.eclipse.swt.graphics.Resource.<init>(Resource.java:120)
+	at org.eclipse.swt.graphics.Image.<init>(Image.java:605)
+	at org.eclipse.jface.resource.URLImageDescriptor.createImage(URLImageDescriptor.java:275)
+	at org.eclipse.jface.resource.ImageDescriptor.createResource(ImageDescriptor.java:230)
+	at org.eclipse.jface.resource.DeviceResourceManager.allocate(DeviceResourceManager.java:55)
+	at org.eclipse.jface.resource.AbstractResourceManager.create(AbstractResourceManager.java:88)
+	at org.eclipse.jface.resource.LazyResourceManager.create(LazyResourceManager.java:103)
+	at org.eclipse.jface.resource.LocalResourceManager.allocate(LocalResourceManager.java:72)
+	at org.eclipse.jface.resource.AbstractResourceManager.create(AbstractResourceManager.java:88)
+	at org.eclipse.jface.resource.ResourceManager.createImageWithDefault(ResourceManager.java:195)
+	at org.eclipse.jface.action.ActionContributionItem.updateImages(ActionContributionItem.java:1017)
+	at org.eclipse.jface.action.ActionContributionItem.updateToolItem(ActionContributionItem.java:776)
+	at org.eclipse.jface.action.ActionContributionItem.update(ActionContributionItem.java:739)
+	at org.eclipse.jface.action.ActionContributionItem.fill(ActionContributionItem.java:350)
+	at org.eclipse.jface.action.ToolBarManager.update(ToolBarManager.java:358)
+	at org.eclipse.compare.contentmergeviewer.ContentMergeViewer.initializeToolbars(ContentMergeViewer.java:953)
+	at org.eclipse.compare.contentmergeviewer.ContentMergeViewer.buildControl(ContentMergeViewer.java:873)
+	at org.eclipse.compare.contentmergeviewer.TextMergeViewer.<init>(TextMergeViewer.java:1626)
+	at org.springframework.ide.eclipse.maven.pom.PomMergeViewer.<init>(PomMergeViewer.java:41)
+	at org.springframework.ide.eclipse.maven.pom.PomMergeViewerCreator.createViewer(PomMergeViewerCreator.java:25)
+	at org.eclipse.compare.internal.ViewerDescriptor.createViewer(ViewerDescriptor.java:66)
+	at org.eclipse.compare.internal.CompareUIPlugin.getViewer(CompareUIPlugin.java:1107)
+	at org.eclipse.compare.internal.CompareUIPlugin.findContentViewer(CompareUIPlugin.java:1102)
+	at org.eclipse.compare.CompareUI.findContentViewer(CompareUI.java:338)
+	at org.eclipse.compare.CompareEditorInput.findContentViewer(CompareEditorInput.java:916)
+	at org.eclipse.compare.internal.CompareContentViewerSwitchingPane.getViewer(CompareContentViewerSwitchingPane.java:99)
+	at org.eclipse.compare.CompareViewerSwitchingPane.setInput(CompareViewerSwitchingPane.java:257)
+	at org.eclipse.compare.internal.CompareContentViewerSwitchingPane.setInput(CompareContentViewerSwitchingPane.java:202)
+	at org.eclipse.compare.CompareEditorInput.internalSetContentPaneInput(CompareEditorInput.java:806)
+	at org.eclipse.compare.CompareEditorInput.lambda$8(CompareEditorInput.java:754)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:74)
+	at org.eclipse.compare.CompareEditorInput.feed1(CompareEditorInput.java:742)
+	at org.eclipse.compare.CompareEditorInput.lambda$4(CompareEditorInput.java:640)
+	at org.eclipse.compare.CompareViewerPane.open(CompareViewerPane.java:312)
+	at org.eclipse.jface.viewers.StructuredViewer$2.run(StructuredViewer.java:800)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.jface.util.SafeRunnable.run(SafeRunnable.java:174)
+	at org.eclipse.jface.viewers.StructuredViewer.fireOpen(StructuredViewer.java:797)
+	at org.eclipse.jface.viewers.StructuredViewer.handleOpen(StructuredViewer.java:1116)
+	at org.springframework.ide.eclipse.boot.wizard.starters.eclipse.ResourceCompareInput$CustomDiffTreeViewer.lambda$0(ResourceCompareInput.java:630)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:185)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:5101)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:4584)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.block(ModalContext.java:166)
+	at org.eclipse.jface.operation.ModalContext.run(ModalContext.java:368)
+	at org.eclipse.jface.wizard.WizardDialog.run(WizardDialog.java:1033)
+	at org.springframework.ide.eclipse.boot.wizard.starters.AddStartersWizard$1.run(AddStartersWizard.java:105)
+	at org.springframework.ide.eclipse.boot.wizard.starters.CompareGeneratedAndCurrentPage.runInWizardContainer(CompareGeneratedAndCurrentPage.java:155)
+	at org.springframework.ide.eclipse.boot.wizard.starters.CompareGeneratedAndCurrentPage.generateComparison(CompareGeneratedAndCurrentPage.java:80)
+	at org.springframework.ide.eclipse.boot.wizard.starters.CompareGeneratedAndCurrentPage.connectToCompareModel(CompareGeneratedAndCurrentPage.java:150)
+	at org.springframework.ide.eclipse.boot.wizard.starters.CompareGeneratedAndCurrentPage.setVisible(CompareGeneratedAndCurrentPage.java:70)
+	at org.eclipse.jface.wizard.WizardDialog.updateForPage(WizardDialog.java:1252)
+	at org.eclipse.jface.wizard.WizardDialog.lambda$3(WizardDialog.java:1222)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:74)
+	at org.eclipse.jface.wizard.WizardDialog.showPage(WizardDialog.java:1222)
+	at org.eclipse.jface.wizard.WizardDialog.nextPressed(WizardDialog.java:917)
+	at org.eclipse.jface.wizard.WizardDialog.buttonPressed(WizardDialog.java:468)
+	at org.eclipse.jface.dialogs.Dialog.lambda$0(Dialog.java:619)
+	at org.eclipse.swt.events.SelectionListener$1.widgetSelected(SelectionListener.java:84)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:252)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:5895)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1520)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:5126)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:4581)
+	at org.eclipse.jface.window.Window.runEventLoop(Window.java:823)
+	at org.eclipse.jface.window.Window.open(Window.java:799)
+	at org.springframework.ide.eclipse.boot.wizard.starters.AddStartersWizard.openFor(AddStartersWizard.java:114)
+	at org.springframework.ide.eclipse.boot.wizard.starters.AddStartersWizard.openFor(AddStartersWizard.java:91)
+	at org.springframework.ide.eclipse.boot.wizard.AddBootStartersHandler.execute(AddBootStartersHandler.java:36)
+	at org.eclipse.ui.internal.handlers.HandlerProxy.execute(HandlerProxy.java:283)
+	at org.eclipse.ui.internal.handlers.E4HandlerProxy.execute(E4HandlerProxy.java:97)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invokeUsingClass(InjectorImpl.java:317)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invoke(InjectorImpl.java:251)
+	at org.eclipse.e4.core.contexts.ContextInjectionFactory.invoke(ContextInjectionFactory.java:173)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceHandler.execute(HandlerServiceHandler.java:156)
+	at org.eclipse.core.commands.Command.executeWithChecks(Command.java:488)
+	at org.eclipse.core.commands.ParameterizedCommand.executeWithChecks(ParameterizedCommand.java:487)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceImpl.executeHandler(HandlerServiceImpl.java:213)
+	at org.eclipse.e4.ui.workbench.renderers.swt.HandledContributionItem.executeItem(HandledContributionItem.java:438)
+	at org.eclipse.e4.ui.workbench.renderers.swt.AbstractContributionItem.handleWidgetSelection(AbstractContributionItem.java:449)
+	at org.eclipse.e4.ui.workbench.renderers.swt.AbstractContributionItem.lambda$2(AbstractContributionItem.java:475)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:5895)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1520)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:5126)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:4581)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1155)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:644)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:551)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:156)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1440)
+
+!ENTRY org.eclipse.ui.ide 4 4 2022-04-28 11:42:42.549
+!MESSAGE Not properly disposed SWT resource
+!STACK 0
+java.lang.Error: SWT Resource was not properly disposed
+	at org.eclipse.swt.graphics.Resource.initNonDisposeTracking(Resource.java:172)
+	at org.eclipse.swt.graphics.Resource.<init>(Resource.java:120)
+	at org.eclipse.swt.graphics.Image.<init>(Image.java:605)
+	at org.eclipse.jface.resource.URLImageDescriptor.createImage(URLImageDescriptor.java:275)
+	at org.eclipse.jface.resource.ImageDescriptor.createResource(ImageDescriptor.java:230)
+	at org.eclipse.jface.resource.DeviceResourceManager.allocate(DeviceResourceManager.java:55)
+	at org.eclipse.jface.resource.AbstractResourceManager.create(AbstractResourceManager.java:88)
+	at org.eclipse.jface.resource.LazyResourceManager.create(LazyResourceManager.java:103)
+	at org.eclipse.jface.resource.LocalResourceManager.allocate(LocalResourceManager.java:72)
+	at org.eclipse.jface.resource.AbstractResourceManager.create(AbstractResourceManager.java:88)
+	at org.eclipse.jface.resource.ResourceManager.createImageWithDefault(ResourceManager.java:195)
+	at org.eclipse.jface.action.ActionContributionItem.updateImages(ActionContributionItem.java:1019)
+	at org.eclipse.jface.action.ActionContributionItem.updateToolItem(ActionContributionItem.java:776)
+	at org.eclipse.jface.action.ActionContributionItem.update(ActionContributionItem.java:739)
+	at org.eclipse.jface.action.ActionContributionItem.fill(ActionContributionItem.java:350)
+	at org.eclipse.jface.action.ToolBarManager.update(ToolBarManager.java:358)
+	at org.eclipse.compare.contentmergeviewer.ContentMergeViewer.initializeToolbars(ContentMergeViewer.java:953)
+	at org.eclipse.compare.contentmergeviewer.ContentMergeViewer.buildControl(ContentMergeViewer.java:873)
+	at org.eclipse.compare.contentmergeviewer.TextMergeViewer.<init>(TextMergeViewer.java:1626)
+	at org.springframework.ide.eclipse.maven.pom.PomMergeViewer.<init>(PomMergeViewer.java:41)
+	at org.springframework.ide.eclipse.maven.pom.PomMergeViewerCreator.createViewer(PomMergeViewerCreator.java:25)
+	at org.eclipse.compare.internal.ViewerDescriptor.createViewer(ViewerDescriptor.java:66)
+	at org.eclipse.compare.internal.CompareUIPlugin.getViewer(CompareUIPlugin.java:1107)
+	at org.eclipse.compare.internal.CompareUIPlugin.findContentViewer(CompareUIPlugin.java:1102)
+	at org.eclipse.compare.CompareUI.findContentViewer(CompareUI.java:338)
+	at org.eclipse.compare.CompareEditorInput.findContentViewer(CompareEditorInput.java:916)
+	at org.eclipse.compare.internal.CompareContentViewerSwitchingPane.getViewer(CompareContentViewerSwitchingPane.java:99)
+	at org.eclipse.compare.CompareViewerSwitchingPane.setInput(CompareViewerSwitchingPane.java:257)
+	at org.eclipse.compare.internal.CompareContentViewerSwitchingPane.setInput(CompareContentViewerSwitchingPane.java:202)
+	at org.eclipse.compare.CompareEditorInput.internalSetContentPaneInput(CompareEditorInput.java:806)
+	at org.eclipse.compare.CompareEditorInput.lambda$8(CompareEditorInput.java:754)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:74)
+	at org.eclipse.compare.CompareEditorInput.feed1(CompareEditorInput.java:742)
+	at org.eclipse.compare.CompareEditorInput.lambda$4(CompareEditorInput.java:640)
+	at org.eclipse.compare.CompareViewerPane.open(CompareViewerPane.java:312)
+	at org.eclipse.jface.viewers.StructuredViewer$2.run(StructuredViewer.java:800)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.jface.util.SafeRunnable.run(SafeRunnable.java:174)
+	at org.eclipse.jface.viewers.StructuredViewer.fireOpen(StructuredViewer.java:797)
+	at org.eclipse.jface.viewers.StructuredViewer.handleOpen(StructuredViewer.java:1116)
+	at org.springframework.ide.eclipse.boot.wizard.starters.eclipse.ResourceCompareInput$CustomDiffTreeViewer.lambda$0(ResourceCompareInput.java:630)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:185)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:5101)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:4584)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.block(ModalContext.java:166)
+	at org.eclipse.jface.operation.ModalContext.run(ModalContext.java:368)
+	at org.eclipse.jface.wizard.WizardDialog.run(WizardDialog.java:1033)
+	at org.springframework.ide.eclipse.boot.wizard.starters.AddStartersWizard$1.run(AddStartersWizard.java:105)
+	at org.springframework.ide.eclipse.boot.wizard.starters.CompareGeneratedAndCurrentPage.runInWizardContainer(CompareGeneratedAndCurrentPage.java:155)
+	at org.springframework.ide.eclipse.boot.wizard.starters.CompareGeneratedAndCurrentPage.generateComparison(CompareGeneratedAndCurrentPage.java:80)
+	at org.springframework.ide.eclipse.boot.wizard.starters.CompareGeneratedAndCurrentPage.connectToCompareModel(CompareGeneratedAndCurrentPage.java:150)
+	at org.springframework.ide.eclipse.boot.wizard.starters.CompareGeneratedAndCurrentPage.setVisible(CompareGeneratedAndCurrentPage.java:70)
+	at org.eclipse.jface.wizard.WizardDialog.updateForPage(WizardDialog.java:1252)
+	at org.eclipse.jface.wizard.WizardDialog.lambda$3(WizardDialog.java:1222)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:74)
+	at org.eclipse.jface.wizard.WizardDialog.showPage(WizardDialog.java:1222)
+	at org.eclipse.jface.wizard.WizardDialog.nextPressed(WizardDialog.java:917)
+	at org.eclipse.jface.wizard.WizardDialog.buttonPressed(WizardDialog.java:468)
+	at org.eclipse.jface.dialogs.Dialog.lambda$0(Dialog.java:619)
+	at org.eclipse.swt.events.SelectionListener$1.widgetSelected(SelectionListener.java:84)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:252)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:5895)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1520)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:5126)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:4581)
+	at org.eclipse.jface.window.Window.runEventLoop(Window.java:823)
+	at org.eclipse.jface.window.Window.open(Window.java:799)
+	at org.springframework.ide.eclipse.boot.wizard.starters.AddStartersWizard.openFor(AddStartersWizard.java:114)
+	at org.springframework.ide.eclipse.boot.wizard.starters.AddStartersWizard.openFor(AddStartersWizard.java:91)
+	at org.springframework.ide.eclipse.boot.wizard.AddBootStartersHandler.execute(AddBootStartersHandler.java:36)
+	at org.eclipse.ui.internal.handlers.HandlerProxy.execute(HandlerProxy.java:283)
+	at org.eclipse.ui.internal.handlers.E4HandlerProxy.execute(E4HandlerProxy.java:97)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invokeUsingClass(InjectorImpl.java:317)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invoke(InjectorImpl.java:251)
+	at org.eclipse.e4.core.contexts.ContextInjectionFactory.invoke(ContextInjectionFactory.java:173)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceHandler.execute(HandlerServiceHandler.java:156)
+	at org.eclipse.core.commands.Command.executeWithChecks(Command.java:488)
+	at org.eclipse.core.commands.ParameterizedCommand.executeWithChecks(ParameterizedCommand.java:487)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceImpl.executeHandler(HandlerServiceImpl.java:213)
+	at org.eclipse.e4.ui.workbench.renderers.swt.HandledContributionItem.executeItem(HandledContributionItem.java:438)
+	at org.eclipse.e4.ui.workbench.renderers.swt.AbstractContributionItem.handleWidgetSelection(AbstractContributionItem.java:449)
+	at org.eclipse.e4.ui.workbench.renderers.swt.AbstractContributionItem.lambda$2(AbstractContributionItem.java:475)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:5895)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1520)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:5126)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:4581)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1155)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:644)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:551)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:156)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1440)
+!SESSION 2022-04-28 16:18:45.910 -----------------------------------------------
+eclipse.buildId=4.23.0.I20220308-0310
+java.version=11.0.14.1
+java.vendor=Ubuntu
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.jface 2 0 2022-04-28 16:19:08.557
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2022-04-28 16:19:08.557
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@299786b1,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@75f8d9b0,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2022-04-28 16:19:08.557
+!MESSAGE A conflict occurred for ALT+SHIFT+R:
+Binding(ALT+SHIFT+R,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.rename.element,Rename - Refactoring ,
+		Rename the selected element,
+		Category(org.eclipse.jdt.ui.category.refactoring,Refactor - Java,Java Refactoring Actions,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@4f7ae05,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+SHIFT+R,
+	ParameterizedCommand(Command(org.eclipse.ui.edit.rename,Rename,
+		Rename the selected item,
+		Category(org.eclipse.ui.category.file,File,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@1e23ee0e,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-04-28 16:19:15.806
+!MESSAGE Entering DelegatingStreamConnectionProvider()
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-04-28 16:19:15.807
+!MESSAGE DelegatingStreamConnectionProvider classloader = org.eclipse.osgi.internal.loader.EquinoxClassLoader@1cab6964[org.springframework.tooling.boot.ls:1.32.0.202203131529(id=466)]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-04-28 16:19:15.837
+!MESSAGE SpringBootLanguageServer exists!
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-04-28 16:19:15.972
+!MESSAGE Instantiating ReusableClasspathListenerHandler
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-04-28 16:19:40.304
+!MESSAGE Boot LS startup time from start to initialized: 24419ms
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-04-28 16:19:42.129
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.VtoXbWOAisBatched = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-04-28 16:19:42.176
+!MESSAGE Setting up ClasspathListenerManager
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-04-28 16:19:42.181
+!MESSAGE Scheduling initial event for all projects ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-04-28 16:19:42.182
+!MESSAGE Scheduling initial event for all projects DONE
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-04-28 16:19:42.182
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-04-28 16:19:42.183
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.VtoXbWOA => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-04-28 16:19:42.190
+!MESSAGE classpath=90 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-04-28 16:19:42.192
+!MESSAGE buffering callback sts4.classpath.VtoXbWOA movie-catalog-service false 90
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-04-28 16:19:42.192
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-04-28 16:19:42.199
+!MESSAGE classpath=65 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-04-28 16:19:42.200
+!MESSAGE buffering callback sts4.classpath.VtoXbWOA movie-data-service false 65
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-04-28 16:19:42.200
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-04-28 16:19:42.206
+!MESSAGE classpath=65 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-04-28 16:19:42.206
+!MESSAGE buffering callback sts4.classpath.VtoXbWOA movie-info-service false 65
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-04-28 16:19:42.210
+!MESSAGE executing callback sts4.classpath.VtoXbWOA 3 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-04-28 16:19:44.262
+!MESSAGE executing callback sts4.classpath.VtoXbWOA FAILED
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 4 0 2022-04-28 16:19:44.262
+!MESSAGE TimeoutException
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1886)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2021)
+	at org.springframework.tooling.ls.eclipse.commons.LSP4ECommandExecutor.executeClientCommand(LSP4ECommandExecutor.java:37)
+	at org.springframework.tooling.jdt.ls.commons.classpath.SendClasspathNotificationsJob.flush(SendClasspathNotificationsJob.java:178)
+	at org.springframework.tooling.jdt.ls.commons.classpath.SendClasspathNotificationsJob.run(SendClasspathNotificationsJob.java:149)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.ui 2 2 2022-04-28 17:42:53.759
+!MESSAGE Invalid property category path: org.springframework.ide.eclipse.beans.ui.properties.ProjectPropertyPage (bundle: org.springframework.ide.eclipse.xml.namespaces, propertyPage: org.springframework.ide.eclipse.beans.ui.namespaces.projectPropertyPage)
+
+!ENTRY org.eclipse.lsp4e 2 0 2022-04-28 17:43:30.235
+!MESSAGE Timeout waiting for data to generate LS hover
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1886)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2021)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:70)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.eclipse.lsp4e 2 0 2022-04-28 17:51:06.685
+!MESSAGE Javadoc unavailable. Failed to obtain it.
+!STACK 0
+java.lang.InterruptedException
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:385)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2022)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:70)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
